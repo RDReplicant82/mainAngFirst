@@ -1,0 +1,10 @@
+<app-header (viewChange) = "viewManage($event)"></app-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <app-recipes *ngIf="renderRecipes"></app-recipes>
+            <app-shopping-list *ngIf="!renderRecipes"></app-shopping-list>
+        </div>
+    </div>
+</div>
